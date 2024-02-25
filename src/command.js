@@ -2,13 +2,13 @@ import yargs from 'yargs'
 import { hideBin } from 'yargs/helpers'
 
 yargs(hideBin(process.argv))
-    .command('new <note>', 'Create a new note', yargs => {
+    .command('new <note>', 'create a new note', yargs => {
         return yargs.positional('note', {
-            type: 'string',
-            description: 'The content of the note to create',
+            describe: 'The content of the note you want to create',
+            type: 'string'
         })
-    }, (argv) => {
-        console.log('hello:', argv.note)
+    }, async (argv) => {
+
     })
     .option('tags', {
         alias: 't',

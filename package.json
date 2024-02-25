@@ -4,11 +4,11 @@
   "description": "CLI-based note-taking app",
   "main": "index.js",
   "type": "module",
-  "bin": {
-    "note": "./index.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "note": "./index.js"
   },
   "keywords": [],
   "author": "",
